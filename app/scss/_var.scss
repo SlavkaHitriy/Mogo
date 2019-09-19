@@ -1,0 +1,37 @@
+$mont: 'Montserrat', sans-serif;
+$kaus: 'Kaushan Script', cursive;
+$rob: 'Roboto', sans-serif;
+
+@mixin cursive{
+    font-size: 24px;
+    font-family: $kaus;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+@mixin title{
+    font-size: 30px;
+    font-weight: 700;
+    font-family: $mont;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+@mixin line {
+    width: 60px;
+    height: 3px;
+    background-color: #f38181;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+@mixin text{
+    color: #999;
+    font-size: 15px;
+    font-family: $rob;
+    max-width: 960px;
+    margin: 0 auto;
+    margin-bottom: 105px;
+    text-align: center;
+}
