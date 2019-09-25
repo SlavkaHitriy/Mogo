@@ -48,7 +48,8 @@
         }
     }
 }
-.header__logo{
+.header__logo,
+.footer__logo{
     line-height: 60px;
     font-size: 30px;
     font-family: $mont;
@@ -952,5 +953,212 @@
             height: 15px;
             top: 1px;
         }
+    }
+}
+
+.map{
+    &__inner{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        background-image: url(../images/map/map-bg.jpg);
+        min-height: 200px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    &__marker{
+        background-image: url(../images/map/marker.png);
+        width: 20px;
+        min-height: 26px;
+        margin-top: 50px;
+    }
+    &__text{
+        font-family: $mont;
+        font-weight: 700;
+        font-size: 24px;
+        color: #f38181;
+        text-transform: uppercase;
+    }
+    &__line{
+        @include line;
+    }
+}
+
+.footer{
+    background-color: #f8f8f8;
+    padding-top: 75px;
+}
+.footer__inner{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 60px;
+    border-bottom: 1px solid #e5e5e5;
+    .footer__logo{
+        margin-bottom: 30px;
+        a{
+            color: #ccc; 
+        }
+    }
+}
+.footer__social{
+    max-width: 470px;
+    width: 100%;
+    &-top{
+        padding-bottom: 15px;
+        border-bottom: 1px solid #e5e5e5;
+    }
+    &-text{
+        color: #999;
+        font-size: 15px;
+        line-height: 24px;
+        font-family: $rob;
+        margin-bottom: 50px;
+    }
+    &-followers{
+        color: #333;
+        font-size: 14px;
+        span{
+            font-weight: 700;
+            font-size: 18px;
+        }
+    }
+    &-bottom{
+        padding-top: 15px;
+    }
+    &-follow{
+        display: inline-block;
+        font-family: $rob;
+        font-style: italic;
+        font-weight: 300;
+        font-size: 15px;
+        color: #999;
+        margin-right: 20px;
+    }
+    &-list{
+        display: inline-block;
+        li{
+            i{
+                color: #95e1d3;
+                font-size: 17px;
+            }
+            & + li{
+                margin-left: 15px;
+            }
+        }
+    }
+}
+.footer__form{
+    display: flex;
+    margin-top: 40px;
+    input{
+        background-color: transparent;
+        border: 1px solid #e7e7e7;
+        padding: 10px;
+        font-size: 15px;
+        font-family: $rob;
+        font-style: italic;
+        font-weight: 300;
+        outline: none;
+        width: 230px;
+        &::placeholder{
+            color: #ccc;
+        }
+    }
+    button{
+        border: none;
+        padding: 12px 33px;
+        background-color: #95e1d3;
+        font-size: 14px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #fff;
+        cursor: pointer;
+    }
+}
+
+.footer__blogs{
+    max-width: 350px;
+    width: 100%;
+    &-item{
+        margin-bottom: 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &-box{
+        padding-left: 20px;
+    }
+    &-img{
+        max-width: 120px;
+        width: 100%;
+        height: 80px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: block;
+    }
+    &-title{
+        font-size: 12px;
+        color: #333;
+        text-transform: uppercase;
+        font-weight: 700;
+        line-height: 18px;
+        margin-bottom: 10px;
+        display: block;
+    }
+    &-date{
+        font-family: $rob;
+        font-style: italic;
+        font-weight: 300;
+        font-size: 13px;
+        color: #999;
+    }
+}
+.footer__title{
+    font-size: 14px;
+    color: #333;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+.footer__inst{
+    max-width: 270px;
+    width: 100%;
+}
+.footer__inst-item{
+    max-width: 88px;
+    width: 100%;
+    min-height: 88px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 3px;
+}
+.footer__inst-content{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.footer__inst-text{
+    font-family: $rob;
+    font-style: italic;
+    font-size: 13px;
+    font-weight: 300;
+    color: #333;
+    margin-top: 20px;
+    display: block; 
+}
+
+.footer__copy{
+    min-height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+    font-size: 14px;
+    span{
+        color: #f38181;
     }
 }
