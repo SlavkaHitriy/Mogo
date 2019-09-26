@@ -107,7 +107,7 @@
    .header__menu nav .menu-list a {
       display: block;
       text-align: center;
-      padding: 50px 0;
+      padding: 20px 0;
    }
    .header__menu{
       nav{
@@ -357,5 +357,8 @@
    }
    .footer__copy {
       font-size: 11px;
+   }
+   .header__menu nav .menu-list a {
+      padding: 10px 0;
    }
 }
