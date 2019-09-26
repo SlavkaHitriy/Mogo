@@ -16,8 +16,8 @@ $(document).ready(function(){
 
     $('.comments__slider').slick({
         dots: false,
-        prevArrow: '<button class="prev-btn"><img src="../images/comments/prev.png" alt=""></button>',
-        nextArrow: '<button class="next-btn"><img src="../images/comments/next.png" alt=""></button>',
+        prevArrow: '<button class="prev-btn"><img src="images/comments/prev.png" alt=""></button>',
+        nextArrow: '<button class="next-btn"><img src="images/comments/next.png" alt=""></button>',
     });
 
     $('.reviews__slider').slick({
