@@ -1,6 +1,5 @@
 @import "global";
 @import "var";
-@import "scroll";
 
 
 .header{
@@ -15,6 +14,7 @@
     justify-content: space-between;
     align-items: center;
     nav{
+        margin-left: auto;
         .menu-list{
             font-family: $mont;
             text-transform: uppercase;
@@ -34,45 +34,40 @@
                 padding-bottom: 12px;
                 border-bottom: 3px solid #fce38a;
             }
-            .menu-list__buy{
-                img{
-                    margin-bottom: -2px;
-                }
-            }
-            .menu-list__search{
-                img{
-                    margin-bottom: -4px;
-                }
-                margin-left: 40px;
-            }
         }
     }
 }
-.burger{
+.menu-list__buy{
+    display: inline-block;
+    img{
+        margin-bottom: -2px;
+    }
+    margin-left: 40px;
+}
+.menu-list__search{
+    display: inline-block;
+    img{
+        margin-bottom: -4px;
+    }
+    margin-left: 40px;
+}
+.burger-menu{
+    width: 30px;
+    height: 30px;
     position: fixed;
-    width: 25px;
-    height: 2px;
-    background-color: #000;
     right: 20px;
-    top: 20px;
-    border-radius: 2px;
-    z-index: 5;
-    &::before,
-    &::after{
-        content: '';
+    top: 15px;
+    padding-top: 5px;
+    display: none;
+    span{
+        display: block;
         width: 25px;
         height: 2px;
         background-color: #000;
-        position: absolute;
-        border-radius: 2px;
+        & + span{
+            margin-top: 6px;
+        }
     }
-    &::after{
-        bottom: 8px;
-    }
-    &::before{
-        top: 8px;
-    }
-    display: none;
 }
 .header__logo,
 .footer__logo{
@@ -115,13 +110,13 @@
         width: 160px;
         height: 40px;
         border: 3px solid #fff;
+        color: #fff;
         display: flex;
         justify-content: center;
         align-items: center;
         text-transform: uppercase;
         font-size: 14px;
         margin-bottom: 160px;
-        cursor: pointer;
         transition: all .3s;
         &:hover{
             background-color: #fff;
@@ -202,7 +197,10 @@
         background-repeat: no-repeat;
         background-size: cover;
         transition: all .3s;
+        position: relative;
         &-icon{
+            position: absolute;
+            top: 0;
             background-image: url(../images/work/users.png);
             width: 32px;
             height: 23px;
@@ -211,12 +209,15 @@
             transition: all .3s;
         }
         &-text{
+            position: absolute;
+            bottom: 0;
             font-family: $mont;
             font-size: 18px;
             color: #fff;
             text-transform: uppercase;
             font-weight: 700;
             opacity: 0;
+            transition: all .3s;
         }
         &:hover{
             background-repeat: no-repeat;
@@ -227,6 +228,12 @@
         &:hover .work__item-icon,
         &:hover .work__item-text{
             opacity: 1;
+        }
+        &:hover .work__item-icon{
+            top: 34%;
+        }
+        &:hover .work__item-text{
+            bottom: 45%;
         }
     }
     .work__item-1{
@@ -493,7 +500,6 @@
                 margin-top: 10px;
             }
         }
-       
     }
 }
 
@@ -923,6 +929,7 @@
         font-size: 14px;
         text-transform: uppercase;
         margin-bottom: 15px;
+        color: #000;
     }
     &-text{
         font-family: $rob;

@@ -73,6 +73,10 @@
    }
 }
 @media (max-width: 900px){
+   .menu-list__search img {
+      margin-bottom: -4px;
+      margin-right: 60px;
+   }
    .menu-list{
       display: flex;
       flex-direction: column;
@@ -88,7 +92,7 @@
       left: -70%;
       transition: all .3s;
    }
-   .burger{
+   .burger-menu{
       display: block;
    }
    .menu-list.active{
