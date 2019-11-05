@@ -156,7 +156,7 @@
       margin-bottom: 40px;
    }
    .header__inner .header__inner-scrolls{
-      bottom: -100px;
+      // bottom: -100px;
       flex-direction: row;
       justify-content: space-between;
    }
@@ -386,13 +386,13 @@
    .header__menu nav .menu-list a {
       padding: 10px 0;
    }
-   .header__inner .header__inner-scrolls{
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      bottom: -150px;
-   }
-   .header__inner .header__inner-scrolls li + li{
-      margin-top: 10px;
-   }
+   // .header__inner .header__inner-scrolls{
+   //    flex-direction: column;
+   //    justify-content: center;
+   //    align-items: center;
+   //    bottom: -150px;
+   // }
+   // .header__inner .header__inner-scrolls li + li{
+   //    margin-top: 10px;
+   // }
 }
